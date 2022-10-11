@@ -1,0 +1,43 @@
+<!-- In your HTML, create an article element that will serve as your main representative component. Give the element a unique identifier.
+In this component, create a sub-component for basic information using the section element. In this section create elements for the representative's image, name, district info, and political affiliation.
+Beneath the basic information, you will create a sub-component, using a section element, to list any committees the candidate is serving on.
+The last component will hold links to any legislation that your representative has enacted. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Congressional Representative</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+	<header class="pageHeader">Tennessee 5th District Representative</header>
+  <br></br>
+
+<article class="representative__article">
+    <section class="bio">
+        <p class="bio bio__name">Jim Cooper</p>
+         <img class="bio bio__img" src="Jim-Cooper.jpg" alt=""></img>
+        <!-- <p class="bio__section bio__title">Biography</p>
+        <p class="bio__section bio__district">Representative Tennessee 5th Congressional District</p> -->
+        <p class="bio bio__party">🇺🇸 Democrat 🇺🇸</p>
+    </section>
+
+    <section class="committees">
+        <p class="comittees committees__title">Committees</p>
+          <ul class="list">
+            <li class="list list__committee">House Committee on Armed Services</li>
+            <li class="list list__committee">House Committee on the Budget</li>
+            <li class="list list__committee">House Committee on Oversight and Reform</li>
+            <li class="list list__committee">House Permanent Select Committee on Intelligence</li>
+          </ul>
+          <br></br>
+        </section>
+
+      <section class="bills">
+        <p class="bills bill__title">Recently Introduced Bills</p>
+        <ul class="list">
+            <li class="list list--link"><a class="list list--link" href="https://www.govtrack.us/congress/bills/117/hres1178">H.Res. 1178: Expressing support for the designation of the week of June 27 through July …</a></li>
+            <li class="list list--link"><a class="list list--link" href="https://www.govtrack.us/congress/bills/117/hr5729">H.R. 5729: GIFTS Act</a></li>
+            <li class="list list--link"><a class="list list--link" href="https://www.govtrack.us/congress/bills/117/hr5271">H.R. 5271: To designate the facility of the United States Postal Service located at 2245 …</a></li>
+        </ul>
+      </section>
+  </article>
